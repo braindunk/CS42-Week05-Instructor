@@ -69,7 +69,8 @@ function myCreate() {
         }
     );
 
-    bricks.children.iterate(
+    // Phaser 4.2.1 syntax for iterating over a group of objects (replaces iterate)
+    bricks.children.forEach(
         function(one_brick) {
             one_brick.setImmovable();
         }
